@@ -27,7 +27,8 @@ st.markdown(
 # ---------- TRAIN MODEL ----------
 @st.cache_data
 def load_model():
-    train_from_csv("data/training.1600000.processed.noemoticon.csv")
+    from model import train_default_data
+    train_default_data()
     return True
 
 load_model()

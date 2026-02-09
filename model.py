@@ -50,3 +50,15 @@ def predict_next_word(text):
         )[0]
 
     return "No prediction"
+def train_default_data():
+    sentences = [
+        "i love machine learning",
+        "i love artificial intelligence",
+        "machine learning is powerful",
+        "artificial intelligence is the future",
+        "i am learning ai",
+        "streamlit makes apps easy",
+        "natural language processing is interesting"
+    ]
+    for s in sentences:
+        add_user_sentence(s)
